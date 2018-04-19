@@ -3,6 +3,7 @@ package com.forneus.virtualmind.entity;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -21,7 +22,7 @@ public class Topic {
 	private Integer id;
 	private String name;
 	
-	@OneToMany(mappedBy = "topic")
+	@OneToMany(mappedBy = "topic", fetch=FetchType.LAZY)
 	private List<Post> posts;
 
 	public Integer getId() {

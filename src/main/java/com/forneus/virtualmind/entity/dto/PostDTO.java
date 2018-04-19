@@ -2,19 +2,34 @@ package com.forneus.virtualmind.entity.dto;
 
 public class PostDTO {
 
+	private Integer id;
+	private String topicName;
+	private String title;
+	private String text;
+	
+	public Integer getId() {
+		return id;
+	}
 	public void setId(Integer id) {
-		// TODO Auto-generated method stub
-		
+		this.id = id;
 	}
-
+	public String getTopicName() {
+		return topicName;
+	}
+	public void setTopicName(String topicName) {
+		this.topicName = topicName;
+	}
+	public String getTitle() {
+		return title;
+	}
 	public void setTitle(String title) {
-		// TODO Auto-generated method stub
-		
+		this.title = title;
 	}
-
-	public void setTopicName(String name) {
-		// TODO Auto-generated method stub
-		
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
 	}
 
 }
