@@ -25,7 +25,7 @@ public class PostService {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	private static int PAGE_SIZE = 7; // In real life would be configurable
+	private static int PAGE_SIZE = 30; // In real life would be configurable
 
 	//public List<PostDTO> listPostTitlesAndTopics(int pageNumber) {
 	
